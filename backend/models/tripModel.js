@@ -25,11 +25,11 @@ const tripSchema = new mongoose.Schema({
     type: String,
     required: true
   },
-  'Covered distance (m)': {
+  'Covered_distance_m': {
     type: Number,
     required: true
   },
-  'Duration (sec.)': {
+  'Duration_sec': {
     type: Number,
     required: true
   }
