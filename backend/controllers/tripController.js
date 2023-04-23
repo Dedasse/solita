@@ -50,10 +50,10 @@ const getAllTrips = async (req, res) => {
   const skip = (page - 1) * limit;
 
   result = result.skip(skip).limit(limit);
-
+  const tripCount= await Trip.countDocuments(queryObject)
   const trips = await result;
   
-  res.status(200).json({trips, dbHits: trips.length})
+  res.status(200).json({trips, dbHits: tripCount})
 }
 
 module.exports = {

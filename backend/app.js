@@ -18,7 +18,7 @@ app.use(express.json())
 app.get('/',(req, res) => {
   res.send('<h1>Hello</h1>')
 })
-app.use('/trips', routeRouter)
+app.use('/', routeRouter)
 
 //error route
 
