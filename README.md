@@ -1,35 +1,51 @@
-# solita
-Functional requirements
+Solita - Functional Requirements
 
+Data Import
+Import data from the CSV files to a database or in-memory storage. ✅
 
-Data import done
-Recommended
-Import data from the CSV files to a database or in-memory storage: done
-Validate data before importing: done
-Don't import journeys that lasted for less than ten seconds: done
-Don't import journeys that covered distances shorter than 10 meters :done
-Journey list view :done
-Recommended
-List journeys :done
-For each journey show departure and return stations, covered distance in kilometers and duration in minutes :done
-Additional
-Pagination : done
-Ordering per column :done
-Searching: done
-Filtering :done
-Station list :done
-Recommended
-List all the stations :done
-Additional
-Pagination :done
-Searching :done
-Single station view :done
-Recommended
-Station name: done
-Station address: done
-Total number of journeys starting from the station: done
-Total number of journeys ending at the station: done
-Additional
-Station location on the map
-The average distance of a journey starting from the station: done
-The average distance of a journey ending at the station: done
+Validate data before importing. ✅
+
+Don't import journeys that lasted for less than ten seconds. ✅
+
+Don't import journeys that covered distances shorter than 10 meters. ✅
+
+Journey List View
+List journeys. ✅
+
+For each journey show departure and return stations, covered distance in kilometers and duration in minutes. ✅
+
+Additional Features
+Pagination. ✅
+
+Ordering per column. ✅
+
+Searching. ✅
+
+Filtering. ✅
+
+Station List
+List all the stations. ✅
+
+Additional Features
+Pagination. ✅
+
+Searching. ✅
+
+Single Station View
+Station name. ✅
+
+Station address. ✅
+
+Total number of journeys starting from the station. ✅
+
+Total number of journeys ending at the station. ✅
+
+Additional Features
+
+Station location on the map.
+
+The average distance of a journey starting from the station. ✅
+
+The average distance of a journey ending at the station. ✅
+
+Note that the items marked with a checkmark (✅) indicate that the requirement was implemented.
