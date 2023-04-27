@@ -10,9 +10,14 @@ const routeRouter = require('./routes/route')
 const notFoundMiddleware = require('./middleware/not-found')
 const errorMiddleware = require('./middleware/error-handler');
 const {default: mongoose} = require('mongoose');
+const cors = require('cors');
 
 //middleware
 app.use(express.json())
+
+app.use(cors({
+  origin: 'http://localhost:3000',
+}));
 
 //routes
 app.get('/',(req, res) => {
@@ -20,12 +25,13 @@ app.get('/',(req, res) => {
 })
 app.use('/', routeRouter)
 
-//error route
 
+
+//error route
 app.use(notFoundMiddleware)
 app.use(errorMiddleware)
 
-const port = process.env.PORT || 3000
+const port = process.env.PORT || 5000
 const start = async () => {
   try {
     await connectDB(process.env.MONGO_URI)

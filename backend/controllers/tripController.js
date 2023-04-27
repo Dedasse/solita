@@ -2,8 +2,15 @@ const {json} = require('express');
 const Trip = require('../models/tripModel');
 
 const getAllTrips = async (req, res) => {
-  const { departure , returni , sort, numericFilters} = req.query
+  const { departure , returni , sort, numericFilters,departure_id,return_id} = req.query
   const queryObject = {};
+
+  if (departure_id) {
+  queryObject["Departure station id"]= departure_id
+  }
+  if (return_id) {
+    queryObject["Return station id"]= return_id
+  }
 
   if (departure) {
     queryObject["Departure station name"] = { $regex: departure, $options: 'i' }
