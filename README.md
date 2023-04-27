@@ -49,3 +49,10 @@ The average distance of a journey starting from the station. ✅
 The average distance of a journey ending at the station. ✅
 
 Note that the items marked with a checkmark (✅) indicate that the requirement was implemented.
+
+
+
+
+
+https://user-images.githubusercontent.com/36969910/234985107-9f331fdf-c015-4c98-ba43-1b39babdbd2f.mp4
+
